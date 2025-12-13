@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "revenuecat/*": ["./dist/src/*"],
-      "revenuecat": ["./dist/src/index.ts"]
+      "revenuecat-sdk-node-do-not-use/*": ["./dist/src/*"],
+      "revenuecat-sdk-node-do-not-use": ["./dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,
