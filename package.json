@@ -1,6 +1,6 @@
 {
   "name": "revenuecat",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The official TypeScript library for the Revenuecat API",
   "author": "Revenuecat <>",
   "types": "dist/index.d.ts",
