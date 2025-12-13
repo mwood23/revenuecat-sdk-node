@@ -42,15 +42,15 @@ If you’d like to use the repository from source, you can either install from g
 To install via git:
 
 ```sh
-$ npm install git+ssh://git@github.com:stainless-sdks/revenuecat-typescript.git
+$ npm install git+ssh://git@github.com:mwood23/revenue-cat-sdk-node.git
 ```
 
 Alternatively, to link a local copy of the repo:
 
 ```sh
 # Clone
-$ git clone https://www.github.com/stainless-sdks/revenuecat-typescript
-$ cd revenuecat-typescript
+$ git clone https://www.github.com/mwood23/revenue-cat-sdk-node
+$ cd revenue-cat-sdk-node
 
 # With yarn
 $ yarn link
