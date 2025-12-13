@@ -8,7 +8,7 @@ node scripts/utils/check-version.cjs
 
 # Build into dist and will publish the package from there,
 # so that src/resources/foo.ts becomes <package root>/resources/foo.js
-# This way importing from `"revenuecat/resources/foo"` works
+# This way importing from `"<package-name>/resources/foo"` works
 # even with `"moduleResolution": "node"`
 
 rm -rf dist; mkdir dist
@@ -41,9 +41,10 @@ cp tsconfig.dist-src.json dist/src/tsconfig.json
 node scripts/utils/postprocess-files.cjs
 
 # make sure that nothing crashes when we require the output CJS or
-# import the output ESM
-(cd dist && node -e 'require("revenuecat")')
-(cd dist && node -e 'import("revenuecat")' --input-type=module)
+# import the output ESM. Use the package name from the generated dist/package.json
+# so renaming the package doesn't break the build.
+(cd dist && node -e 'const { name } = require("./package.json"); require(name)')
+(cd dist && node --input-type=module -e 'import { readFileSync } from "node:fs"; const pkg = JSON.parse(readFileSync(new URL("./package.json", import.meta.url), "utf8")); await import(pkg.name);')
 
 if [ -e ./scripts/build-deno ]
 then

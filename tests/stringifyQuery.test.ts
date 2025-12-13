@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { Revenuecat } from 'revenuecat';
+import { Revenuecat } from 'revcat-do-not-use';
 
 const { stringifyQuery } = Revenuecat.prototype as any;
 

@@ -3,8 +3,8 @@
 import { APIPromise } from 'revenuecat/core/api-promise';
 
 import util from 'node:util';
-import Revenuecat from 'revenuecat';
-import { APIUserAbortError } from 'revenuecat';
+import Revenuecat from 'revcat-do-not-use';
+import { APIUserAbortError } from 'revcat-do-not-use';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {

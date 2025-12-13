@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "revenuecat-sdk-node-do-not-use/*": ["./src/*"],
-      "revenuecat-sdk-node-do-not-use": ["./src/index.ts"]
+      "revcat-do-not-use/*": ["./src/*"],
+      "revcat-do-not-use": ["./src/index.ts"]
     },
     "noEmit": true,
 
