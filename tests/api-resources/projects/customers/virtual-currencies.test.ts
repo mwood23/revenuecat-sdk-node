@@ -27,7 +27,12 @@ describe('resource virtualCurrencies', () => {
   test.skip('list: required and optional params', async () => {
     const response = await client.projects.customers.virtualCurrencies.list(
       '19b8de26-77c1-49f1-aa18-019a391603e2',
-      { project_id: 'proj1ab2c3d4', include_empty_balances: true, limit: 10, starting_after: 'ent12354' },
+      {
+        project_id: 'proj1ab2c3d4',
+        include_empty_balances: true,
+        limit: 10,
+        starting_after: 'ent12354',
+      },
     );
   });
 
@@ -35,7 +40,10 @@ describe('resource virtualCurrencies', () => {
   test.skip('transactions: only required params', async () => {
     const responsePromise = client.projects.customers.virtualCurrencies.transactions(
       '19b8de26-77c1-49f1-aa18-019a391603e2',
-      { project_id: 'proj1ab2c3d4', adjustments: { foo: 0 } },
+      {
+        project_id: 'proj1ab2c3d4',
+        adjustments: { foo: 0 },
+      },
     );
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
@@ -64,7 +72,10 @@ describe('resource virtualCurrencies', () => {
   test.skip('updateBalance: only required params', async () => {
     const responsePromise = client.projects.customers.virtualCurrencies.updateBalance(
       '19b8de26-77c1-49f1-aa18-019a391603e2',
-      { project_id: 'proj1ab2c3d4', adjustments: { foo: 0 } },
+      {
+        project_id: 'proj1ab2c3d4',
+        adjustments: { foo: 0 },
+      },
     );
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);

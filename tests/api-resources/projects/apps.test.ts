@@ -47,7 +47,12 @@ describe('resource apps', () => {
         paddle_is_sandbox: true,
       },
       play_store: { package_name: 'x' },
-      rc_billing: { app_name: 'x', default_currency: 'USD', stripe_account_id: 'x', support_email: 'x' },
+      rc_billing: {
+        app_name: 'x',
+        default_currency: 'USD',
+        stripe_account_id: 'x',
+        support_email: 'x',
+      },
       roku: {
         roku_api_key: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
         roku_channel_id: 'xxxxxx',
@@ -99,7 +104,12 @@ describe('resource apps', () => {
         paddle_is_sandbox: true,
       },
       play_store: { package_name: 'x' },
-      rc_billing: { app_name: 'x', default_currency: 'USD', stripe_account_id: 'x', support_email: 'x' },
+      rc_billing: {
+        app_name: 'x',
+        default_currency: 'USD',
+        stripe_account_id: 'x',
+        support_email: 'x',
+      },
       roku: {
         roku_api_key: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
         roku_channel_id: 'xxxxxx',

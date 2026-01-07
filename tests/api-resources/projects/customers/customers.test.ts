@@ -70,7 +70,11 @@ describe('resource customers', () => {
     await expect(
       client.projects.customers.list(
         'proj1ab2c3d4',
-        { limit: 10, search: 'example@example.com', starting_after: 'ent12354' },
+        {
+          limit: 10,
+          search: 'example@example.com',
+          starting_after: 'ent12354',
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(Revenuecat.NotFoundError);
@@ -116,7 +120,11 @@ describe('resource customers', () => {
   test.skip('retrieveActiveEntitlements: required and optional params', async () => {
     const response = await client.projects.customers.retrieveActiveEntitlements(
       '19b8de26-77c1-49f1-aa18-019a391603e2',
-      { project_id: 'proj1ab2c3d4', limit: 10, starting_after: 'ent12354' },
+      {
+        project_id: 'proj1ab2c3d4',
+        limit: 10,
+        starting_after: 'ent12354',
+      },
     );
   });
 
@@ -163,7 +171,12 @@ describe('resource customers', () => {
   test.skip('retrievePurchases: required and optional params', async () => {
     const response = await client.projects.customers.retrievePurchases(
       '19b8de26-77c1-49f1-aa18-019a391603e2',
-      { project_id: 'proj1ab2c3d4', environment: 'sandbox', limit: 10, starting_after: 'ent12354' },
+      {
+        project_id: 'proj1ab2c3d4',
+        environment: 'sandbox',
+        limit: 10,
+        starting_after: 'ent12354',
+      },
     );
   });
 
@@ -186,7 +199,12 @@ describe('resource customers', () => {
   test.skip('retrieveSubscriptions: required and optional params', async () => {
     const response = await client.projects.customers.retrieveSubscriptions(
       '19b8de26-77c1-49f1-aa18-019a391603e2',
-      { project_id: 'proj1ab2c3d4', environment: 'sandbox', limit: 10, starting_after: 'ent12354' },
+      {
+        project_id: 'proj1ab2c3d4',
+        environment: 'sandbox',
+        limit: 10,
+        starting_after: 'ent12354',
+      },
     );
   });
 });
