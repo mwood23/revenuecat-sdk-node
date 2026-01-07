@@ -35,7 +35,11 @@ describe('resource actions', () => {
   test.skip('grantEntitlement: only required params', async () => {
     const responsePromise = client.projects.customers.actions.grantEntitlement(
       '19b8de26-77c1-49f1-aa18-019a391603e2',
-      { project_id: 'proj1ab2c3d4', entitlement_id: 'entla1b2c3d4e5', expires_at: 1658399423658 },
+      {
+        project_id: 'proj1ab2c3d4',
+        entitlement_id: 'entla1b2c3d4e5',
+        expires_at: 1658399423658,
+      },
     );
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
@@ -50,7 +54,11 @@ describe('resource actions', () => {
   test.skip('grantEntitlement: required and optional params', async () => {
     const response = await client.projects.customers.actions.grantEntitlement(
       '19b8de26-77c1-49f1-aa18-019a391603e2',
-      { project_id: 'proj1ab2c3d4', entitlement_id: 'entla1b2c3d4e5', expires_at: 1658399423658 },
+      {
+        project_id: 'proj1ab2c3d4',
+        entitlement_id: 'entla1b2c3d4e5',
+        expires_at: 1658399423658,
+      },
     );
   });
 
@@ -96,7 +104,11 @@ describe('resource actions', () => {
   test.skip('transfer: required and optional params', async () => {
     const response = await client.projects.customers.actions.transfer(
       '19b8de26-77c1-49f1-aa18-019a391603e2',
-      { project_id: 'proj1ab2c3d4', target_customer_id: 'target_customer_id', app_ids: ['appa2b3c4d5e'] },
+      {
+        project_id: 'proj1ab2c3d4',
+        target_customer_id: 'target_customer_id',
+        app_ids: ['appa2b3c4d5e'],
+      },
     );
   });
 });

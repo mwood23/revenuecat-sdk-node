@@ -76,7 +76,12 @@ describe('resource products', () => {
     await expect(
       client.projects.products.list(
         'proj1ab2c3d4',
-        { app_id: 'app1a2b3c4', expand: ['items.app'], limit: 10, starting_after: 'ent12354' },
+        {
+          app_id: 'app1a2b3c4',
+          expand: ['items.app'],
+          limit: 10,
+          starting_after: 'ent12354',
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(Revenuecat.NotFoundError);

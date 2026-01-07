@@ -41,7 +41,10 @@ export class VirtualCurrencies extends APIResource {
    * const listVirtualCurrenciesBalances =
    *   await client.projects.customers.virtualCurrencies.transactions(
    *     '19b8de26-77c1-49f1-aa18-019a391603e2',
-   *     { project_id: 'proj1ab2c3d4', adjustments: { foo: 0 } },
+   *     {
+   *       project_id: 'proj1ab2c3d4',
+   *       adjustments: { foo: 0 },
+   *     },
    *   );
    * ```
    */
@@ -74,7 +77,10 @@ export class VirtualCurrencies extends APIResource {
    * const listVirtualCurrenciesBalances =
    *   await client.projects.customers.virtualCurrencies.updateBalance(
    *     '19b8de26-77c1-49f1-aa18-019a391603e2',
-   *     { project_id: 'proj1ab2c3d4', adjustments: { foo: 0 } },
+   *     {
+   *       project_id: 'proj1ab2c3d4',
+   *       adjustments: { foo: 0 },
+   *     },
    *   );
    * ```
    */

@@ -96,7 +96,11 @@ describe('resource offerings', () => {
     await expect(
       client.projects.offerings.list(
         'proj1ab2c3d4',
-        { expand: ['items.package'], limit: 10, starting_after: 'ent12354' },
+        {
+          expand: ['items.package'],
+          limit: 10,
+          starting_after: 'ent12354',
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(Revenuecat.NotFoundError);
