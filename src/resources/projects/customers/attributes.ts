@@ -121,7 +121,7 @@ export interface AttributeCreateParams {
   project_id: string;
 
   /**
-   * Body param:
+   * Body param
    */
   attributes: Array<AttributeCreateParams.Attribute>;
 }
@@ -147,12 +147,12 @@ export interface AttributeListParams {
   project_id: string;
 
   /**
-   * Query param:
+   * Query param
    */
   limit?: number;
 
   /**
-   * Query param:
+   * Query param
    */
   starting_after?: string;
 }

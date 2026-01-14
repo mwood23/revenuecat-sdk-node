@@ -166,17 +166,17 @@ export interface VirtualCurrencyListParams {
   project_id: string;
 
   /**
-   * Query param:
+   * Query param
    */
   include_empty_balances?: boolean;
 
   /**
-   * Query param:
+   * Query param
    */
   limit?: number;
 
   /**
-   * Query param:
+   * Query param
    */
   starting_after?: string;
 }
@@ -193,7 +193,7 @@ export interface VirtualCurrencyTransactionsParams {
   adjustments: { [key: string]: number };
 
   /**
-   * Query param:
+   * Query param
    */
   include_empty_balances?: boolean;
 
@@ -221,7 +221,7 @@ export interface VirtualCurrencyUpdateBalanceParams {
   adjustments: { [key: string]: number };
 
   /**
-   * Query param:
+   * Query param
    */
   include_empty_balances?: boolean;
 

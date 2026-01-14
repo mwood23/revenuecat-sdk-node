@@ -596,12 +596,12 @@ export interface CustomerRetrieveActiveEntitlementsParams {
   project_id: string;
 
   /**
-   * Query param:
+   * Query param
    */
   limit?: number;
 
   /**
-   * Query param:
+   * Query param
    */
   starting_after?: string;
 }
@@ -613,12 +613,12 @@ export interface CustomerRetrieveAliasesParams {
   project_id: string;
 
   /**
-   * Query param:
+   * Query param
    */
   limit?: number;
 
   /**
-   * Query param:
+   * Query param
    */
   starting_after?: string;
 }
@@ -630,17 +630,17 @@ export interface CustomerRetrievePurchasesParams {
   project_id: string;
 
   /**
-   * Query param:
+   * Query param
    */
   environment?: 'sandbox' | 'production';
 
   /**
-   * Query param:
+   * Query param
    */
   limit?: number;
 
   /**
-   * Query param:
+   * Query param
    */
   starting_after?: string;
 }
@@ -652,17 +652,17 @@ export interface CustomerRetrieveSubscriptionsParams {
   project_id: string;
 
   /**
-   * Query param:
+   * Query param
    */
   environment?: 'sandbox' | 'production';
 
   /**
-   * Query param:
+   * Query param
    */
   limit?: number;
 
   /**
-   * Query param:
+   * Query param
    */
   starting_after?: string;
 }
