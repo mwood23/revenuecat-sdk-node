@@ -331,12 +331,12 @@ export interface EntitlementListProductsParams {
   project_id: string;
 
   /**
-   * Query param:
+   * Query param
    */
   limit?: number;
 
   /**
-   * Query param:
+   * Query param
    */
   starting_after?: string;
 }

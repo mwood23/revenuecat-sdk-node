@@ -122,12 +122,12 @@ export interface PackageListParams {
   expand?: Array<'items.product'>;
 
   /**
-   * Query param:
+   * Query param
    */
   limit?: number;
 
   /**
-   * Query param:
+   * Query param
    */
   starting_after?: string;
 }
